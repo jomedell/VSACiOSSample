@@ -1,24 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TuL-BN-ovy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--VSACEventsVC-->
+        <scene sceneID="pAY-m6-uUT">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController title="VSACEventsVC" id="fE3-PG-KSl" customClass="EventsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Er-3d-T76">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHi-1d-03c">
+                                <rect key="frame" x="185.5" y="92" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GK-Oz-znv">
+                                <rect key="frame" x="184" y="145" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="EventAction:" destination="fE3-PG-KSl" eventType="touchUpInside" id="WQ7-8k-4S8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JfI-Nz-RF5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nHi-1d-03c" firstAttribute="top" secondItem="JfI-Nz-RF5" secondAttribute="top" constant="48" id="8DK-Hs-v42"/>
+                            <constraint firstItem="1GK-Oz-znv" firstAttribute="top" secondItem="nHi-1d-03c" secondAttribute="bottom" constant="32" id="NcU-zI-LRK"/>
+                            <constraint firstItem="nHi-1d-03c" firstAttribute="centerX" secondItem="3Er-3d-T76" secondAttribute="centerX" id="TYz-y2-m5f"/>
+                            <constraint firstItem="nHi-1d-03c" firstAttribute="centerX" secondItem="1GK-Oz-znv" secondAttribute="centerX" id="nBM-e7-ygn"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Events" id="5hC-RO-3u3"/>
+                    <connections>
+                        <outlet property="EventButton" destination="1GK-Oz-znv" id="vs2-s5-r51"/>
+                        <outlet property="EventLabel" destination="nHi-1d-03c" id="yQ1-aC-9IT"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4p9-BA-hU8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1641" y="-83"/>
+        </scene>
+        <!--MSCrashesVC-->
+        <scene sceneID="QEh-gS-zyq">
+            <objects>
+                <viewController title="MSCrashesVC" id="45X-YD-v5c" customClass="CrashesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iiL-sh-atB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crash" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGM-Nb-9H8">
+                                <rect key="frame" x="184.5" y="100" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsS-3H-Ehn">
+                                <rect key="frame" x="184" y="151" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="CrashesAction:" destination="45X-YD-v5c" eventType="touchUpInside" id="rBi-qM-5Kb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cn4-h6-jvk"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rGM-Nb-9H8" firstAttribute="centerX" secondItem="iiL-sh-atB" secondAttribute="centerX" id="AEI-e0-IaD"/>
+                            <constraint firstItem="rGM-Nb-9H8" firstAttribute="centerX" secondItem="dsS-3H-Ehn" secondAttribute="centerX" id="AvO-aq-AJb"/>
+                            <constraint firstItem="dsS-3H-Ehn" firstAttribute="top" secondItem="rGM-Nb-9H8" secondAttribute="bottom" constant="30" id="Coz-xR-XyF"/>
+                            <constraint firstItem="rGM-Nb-9H8" firstAttribute="top" secondItem="cn4-h6-jvk" secondAttribute="top" constant="56" id="Ues-JW-yDo"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Crashes" id="Cew-43-kA6"/>
+                    <connections>
+                        <outlet property="CrashesButton" destination="dsS-3H-Ehn" id="42g-oV-e7A"/>
+                        <outlet property="CrashesLabel" destination="rGM-Nb-9H8" id="kqm-xc-Tfy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pmb-e8-vgm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1610" y="577"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qVd-FN-ZDX">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarVC" id="TuL-BN-ovy" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ip9-mA-euA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fE3-PG-KSl" kind="relationship" relationship="viewControllers" id="9rO-EY-LlL"/>
+                        <segue destination="45X-YD-v5c" kind="relationship" relationship="viewControllers" id="PpN-JO-Voa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bLZ-3j-BPP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="248"/>
         </scene>
     </scenes>
 </document>

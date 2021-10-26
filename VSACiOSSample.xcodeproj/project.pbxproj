@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5808CF522728BA7000EDED70 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5808CF512728BA7000EDED70 /* README.md */; };
+		5808CF542728BA8600EDED70 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5808CF532728BA8600EDED70 /* .gitignore */; };
+		5856AF7E2728B1F100425CF4 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5856AF7D2728B1F100425CF4 /* EventsViewController.m */; };
+		5856AF812728B20700425CF4 /* CrashesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5856AF802728B20700425CF4 /* CrashesViewController.m */; };
 		58E5AE0A2728A43200B895C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E5AE092728A43200B895C3 /* AppDelegate.m */; };
 		58E5AE0D2728A43200B895C3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E5AE0C2728A43200B895C3 /* SceneDelegate.m */; };
 		58E5AE102728A43200B895C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E5AE0F2728A43200B895C3 /* ViewController.m */; };
@@ -14,9 +18,16 @@
 		58E5AE152728A43500B895C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58E5AE142728A43500B895C3 /* Assets.xcassets */; };
 		58E5AE182728A43500B895C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E5AE162728A43500B895C3 /* LaunchScreen.storyboard */; };
 		58E5AE1B2728A43500B895C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E5AE1A2728A43500B895C3 /* main.m */; };
+		D8ACFFCC3C9C1A335B6AC34B /* Pods_VSACiOSSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5FB9ACDC5E2D6E5A986790 /* Pods_VSACiOSSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5808CF512728BA7000EDED70 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		5808CF532728BA8600EDED70 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		5856AF7C2728B1F100425CF4 /* EventsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		5856AF7D2728B1F100425CF4 /* EventsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		5856AF7F2728B20700425CF4 /* CrashesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrashesViewController.h; sourceTree = "<group>"; };
+		5856AF802728B20700425CF4 /* CrashesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashesViewController.m; sourceTree = "<group>"; };
 		58E5AE052728A43200B895C3 /* VSACiOSSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VSACiOSSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E5AE082728A43200B895C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58E5AE092728A43200B895C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +40,9 @@
 		58E5AE172728A43500B895C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58E5AE192728A43500B895C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58E5AE1A2728A43500B895C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69A6A12A4C05171C4A92BE94 /* Pods-VSACiOSSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VSACiOSSample.release.xcconfig"; path = "Target Support Files/Pods-VSACiOSSample/Pods-VSACiOSSample.release.xcconfig"; sourceTree = "<group>"; };
+		8D5FB9ACDC5E2D6E5A986790 /* Pods_VSACiOSSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VSACiOSSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F002F33EE13B414C8F8375B5 /* Pods-VSACiOSSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VSACiOSSample.debug.xcconfig"; path = "Target Support Files/Pods-VSACiOSSample/Pods-VSACiOSSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +50,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8ACFFCC3C9C1A335B6AC34B /* Pods_VSACiOSSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		062002AD288446848C5527D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D5FB9ACDC5E2D6E5A986790 /* Pods_VSACiOSSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43CEFD23FFFEBF7C2A629959 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F002F33EE13B414C8F8375B5 /* Pods-VSACiOSSample.debug.xcconfig */,
+				69A6A12A4C05171C4A92BE94 /* Pods-VSACiOSSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		58E5ADFC2728A43200B895C3 = {
 			isa = PBXGroup;
 			children = (
+				5808CF512728BA7000EDED70 /* README.md */,
+				5808CF532728BA8600EDED70 /* .gitignore */,
 				58E5AE072728A43200B895C3 /* VSACiOSSample */,
 				58E5AE062728A43200B895C3 /* Products */,
+				43CEFD23FFFEBF7C2A629959 /* Pods */,
+				062002AD288446848C5527D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +102,10 @@
 				58E5AE0B2728A43200B895C3 /* SceneDelegate.h */,
 				58E5AE0C2728A43200B895C3 /* SceneDelegate.m */,
 				58E5AE0E2728A43200B895C3 /* ViewController.h */,
+				5856AF7C2728B1F100425CF4 /* EventsViewController.h */,
+				5856AF7D2728B1F100425CF4 /* EventsViewController.m */,
+				5856AF7F2728B20700425CF4 /* CrashesViewController.h */,
+				5856AF802728B20700425CF4 /* CrashesViewController.m */,
 				58E5AE0F2728A43200B895C3 /* ViewController.m */,
 				58E5AE112728A43200B895C3 /* Main.storyboard */,
 				58E5AE142728A43500B895C3 /* Assets.xcassets */,
@@ -83,6 +123,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58E5AE1E2728A43500B895C3 /* Build configuration list for PBXNativeTarget "VSACiOSSample" */;
 			buildPhases = (
+				EC792E5EEA4648795DB1D846 /* [CP] Check Pods Manifest.lock */,
 				58E5AE012728A43200B895C3 /* Sources */,
 				58E5AE022728A43200B895C3 /* Frameworks */,
 				58E5AE032728A43200B895C3 /* Resources */,
@@ -133,13 +174,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5808CF542728BA8600EDED70 /* .gitignore in Resources */,
 				58E5AE182728A43500B895C3 /* LaunchScreen.storyboard in Resources */,
 				58E5AE152728A43500B895C3 /* Assets.xcassets in Resources */,
+				5808CF522728BA7000EDED70 /* README.md in Resources */,
 				58E5AE132728A43200B895C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EC792E5EEA4648795DB1D846 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VSACiOSSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58E5AE012728A43200B895C3 /* Sources */ = {
@@ -148,7 +216,9 @@
 			files = (
 				58E5AE102728A43200B895C3 /* ViewController.m in Sources */,
 				58E5AE0A2728A43200B895C3 /* AppDelegate.m in Sources */,
+				5856AF812728B20700425CF4 /* CrashesViewController.m in Sources */,
 				58E5AE1B2728A43500B895C3 /* main.m in Sources */,
+				5856AF7E2728B1F100425CF4 /* EventsViewController.m in Sources */,
 				58E5AE0D2728A43200B895C3 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +359,7 @@
 		};
 		58E5AE1F2728A43500B895C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F002F33EE13B414C8F8375B5 /* Pods-VSACiOSSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +387,7 @@
 		};
 		58E5AE202728A43500B895C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69A6A12A4C05171C4A92BE94 /* Pods-VSACiOSSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

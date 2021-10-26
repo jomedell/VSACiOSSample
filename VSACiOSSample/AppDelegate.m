@@ -6,6 +6,9 @@
 //
 
 #import "AppDelegate.h"
+@import AppCenter;
+@import AppCenterAnalytics;
+@import AppCenterCrashes;
 
 @interface AppDelegate ()
 
@@ -16,6 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //App Center SDK
+    // verbose logs
+    [MSACAppCenter setLogLevel:MSACLogLevelVerbose];
+    [MSACAppCenter start:@"54c05a54-ae8a-4226-8056-bd775e52aae9" withServices:@[[MSACAnalytics class], [MSACCrashes class]]];
+    
     return YES;
 }
 
