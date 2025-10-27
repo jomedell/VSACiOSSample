@@ -4,16 +4,36 @@
 # https://aka.ms/yaml
 
 trigger:
-- main
+- none
 
 pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: AzureKeyVault@2
+  displayName: Azure Key Vault
+  inputs:
+    azureSubscription: 'ptoppinTestServiceConnection001'
+    KeyVaultName: 'ptoppinTestKeyVault001'
+    SecretsFilter: '*'
+    RunAsPreJob: false
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- task: CmdLine@2
+  displayName: Create file
+  inputs:
+    script: 'echo $(ptoppinTestSecret001) > secret.txt'
+
+- task: CopyFiles@2
+  displayName: Copy file
+  inputs:
+    Contents: secret.txt
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  displayName: Publish Artifact
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+
+
